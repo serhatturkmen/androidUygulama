@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sanal Pazar</string>
+    <string name="Test">Test</string>
+    <string name="giris">Giriş</string>
+    <string name="Siparis">Sipariş Ver</string>
+    <string name="Name">Adınızı giriniz</string>
+    <string name="Password">Parolanızı giriniz</string>
+    <string-array name="products">
+        <item>-----Seçiniz-----</item>
+        <item>Mercimek</item>
+        <item>Köfte + patates</item>
+        <item>Mantı</item>
+        <item>Salata</item>
+    </string-array>
+    <string name="misir">Mısır</string>
+    <string name="sucuk">Sucuk</string>
+    <string name="islemMetni">İşlem yapılıyor...</string>
+</resources>

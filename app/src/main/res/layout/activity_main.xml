@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/spinnerSecenek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:spinnerMode="dropdown"
+            android:entries="@array/products"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cBM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/misir"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/cBS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sucuk"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/dpSonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="calendar" />
+
+        <Button
+            android:id="@+id/btnSiparis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/Siparis"
+            android:onClick="btnSiparis_Click"
+            />
+        <TextView
+            android:id="@+id/sonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="deeneme"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
